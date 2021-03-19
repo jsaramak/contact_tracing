@@ -62,9 +62,7 @@ p_severesymptoms=0.1*(1-p_asymptomatic)
 I_classes=['Ias','Ips','Ims','Iss']
 I_probs=[p_asymptomatic,p_paucisymptomatic,p_mildsymptoms,p_severesymptoms]
 
-serial_interval=7.5*day
-
-infectious_period=serial_interval-incubation_period
+infectious_period=7.5*day-incubation_period
 
 infectiousness_damping=0.51 # for Ias,Ips and their pre-symptomatic period (Ip)
 
